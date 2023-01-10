@@ -1,0 +1,6 @@
+Batch converting from SVG to PDF in Linux terminal:
+sudo apt-get install librsvg2-bin
+for i in *.svg;do rsvg-convert -f pdf -o ${i%.*}.pdf $i;done
+
+Converting only one SVG to PDF in Linux terminal:
+rsvg-convert -f pdf -o t.pdf t.svg
